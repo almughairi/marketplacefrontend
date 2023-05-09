@@ -32,6 +32,7 @@ function App() {
       professionals, we specialize in services management, transaction 
       management, network support, and business technology support. We work closely with clients to understand their unique needs and provide customized strategies that drive growth and success. Our team is dedicated to delivering results that exceed our clients' expectations, leveraging cutting-edge technology and innovative solutions. Whether it's managing complex services, optimizing transactions, or providing expert network and technology support, our digital department is here to help businesses thrive in today's digital landscape."
       </p>
+      <button className='button' onClick={()=>alert('HI from javascript')}></button>
       </div>
       </article>
     </div>
