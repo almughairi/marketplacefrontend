@@ -1,23 +1,25 @@
 import './App.css';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Welcome extends React.Component {
-  Constructor() {
-    super();
+  constructor(valueArgu) {
+    super(valueArgu);
   }
+
   render() {
-    return <h1>Welcome to digital banking</h1>;
+    return <h1>Welcome to { this.valueArgu.name} Digital Banking</h1>;
   }
 }
 
-
 function App() {
 
-  const departmentName ='Digital Department'
+  const name ='Digital'
   return (
     <div className="container">
       <img src="Angelo_Gemmi_rosette_3.png"/>
 
+          <Welcome name="Alizzwallet" />
+          <Welcome name="AlizzBusiness" />
           <div className="login">
           <ul>
               <li>Login</li>
@@ -36,7 +38,7 @@ function App() {
    <article>
       <div className="container">
       <p>
-      Alizz islamic bank <b>{departmentName}</b> is a leading provider
+      Alizz islamic bank <b>{name}</b> is a leading provider
        of comprehensive digital solutions, offering
       a wide range of services that help businesses achieve 
       their goals in the digital world. With a team of highly skilled 
